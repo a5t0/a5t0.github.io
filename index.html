@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Cellarium</title>
+<link rel="stylesheet" href="css/foundation.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="icon" href="favicon.ico">
+
+<style>
+    body {       
+        /* background-image: url("img/background.jpg"); */
+        background-image: url("img/bg2.jpg");
+        background-size: cover;
+        background-color: rgba(0,0,0,0.4);
+        background-blend-mode: darken;
+        user-select: none;
+        background-attachment: fixed;
+        /* backdrop-filter: blur(3px); */
+    }
+    .callout {
+        width: 900px;
+        background-color: black;
+        margin: 0 auto;
+        margin-top: -15px;
+        opacity: 0.7;
+        border-radius: 5px;
+        /* border-color: rgba(255, 255, 255, 0.5); */
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+        backdrop-filter: blur(15px);
+    }
+    .text {
+        color: white;
+        margin-left: 25px;
+        /* font-family: "Ricty Diminished"; */
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .link {
+        /* font-weight: 1000; */
+        text-decoration: underline;
+        /* font-family: "Ricty Diminished"; */
+    }
+    .text-title {
+        color: white;
+        /*margin: 25px;*/
+        /* font-family: "Ricty Diminished"; */
+        text-align: center;
+    }
+    .text-welcome {
+        color: white;
+        /* font-family: "Ricty Diminished"; */
+        text-align: center;
+        margin-top: -15px;
+    }
+    hr {
+        opacity: 0.5;
+        
+    }
+    .about {
+        color: white;
+        margin-left: 25px;
+        margin-top: 0px;
+        /* font-family: "Ricty Diminished"; */
+    }
+    .box {
+        width: 865px;            
+        height: 590px;               
+        border: 1px solid #000;      
+        overflow-y: scroll;
+    }
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #404040;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 10px;
+    }
+    .top-bar {
+        background-color: black;
+    }
+    .yuuka {
+        width:75px;
+        margin-left:auto;
+        /* border: 1px solid white; */
+        /*pointer-events: none;*/
+        border-radius: 50px;
+        /* opacity: 0.8; */
+        box-shadow: 0 10px 25px 0 rgba(255, 255, 255, 0.1);
+    }
+    .top-bar,
+    .top-bar ul {
+    background-color: black;
+    }
+    .menu-text {
+        color: red;
+    }
+    .accordion, .accordion-content {
+    background-color: black;
+    /* box-shadow: 0 10px 25px 0 rgba(255, 255, 255, 10%); */
+    }
+    .accordion {
+       width: 50%;
+       margin-left: 25px;
+       border-radius: 10px;
+    }
+    .accordion-title {
+    color: white;
+    }
+</style>
+</head>
+<body>
+    <br>
+
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div class="callout">
+            <!--
+            <div class="top-bar">
+                <div class="top-bar-left">
+                  <ul class="menu">
+                    <li class="menu-text"><strong class="text-title" style="color:white;">a</strong></li>
+
+                  </ul>
+                </div>
+                <div class="top-bar-right">
+                  <ul class="menu">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                  </ul>
+                </div>
+            </div> -->
+            <div>
+                <a href="top.html">
+                <img class="yuuka" src="img/yuuka.jpg" style="float:left;">
+                </a>
+                <h1 class="text-title" style="margin-right: 75px;">Cellarium</h1>
+            </div>
+            <br>
+            <p class="text-welcome"></p>
+            <hr>
+            <h3 class="text"><strong>About</strong></h3>
+            <p class="text">Welcome to Cellarium.</p>
+            <p class="text" style="text-decoration: line-through"><strong>SAMPLE TEXT</strong></p>
+            <hr>
+            <h3 class="text"><strong>Who am I?</strong></h3>
+            <p class="text">Name: Astralair</p>
+            <p class="text">主にソシャゲや音楽鑑賞、アニメが趣味な人です。最近はマイクラRTAなどもやっています。</p>
+            <a class="link" style="margin-left: 25px; " href="https://anilist.co/user/6173746f/" target="_blank"><strong>My Anilist</strong></a>
+            <p>
+                <!-- 
+                <ul class="accordion" data-accordion data-allow-all-closed="true">
+                    <li class="accordion-item" data-accordion-item>
+                      <a href="#" class="accordion-title">プレイ中のゲーム</a>
+                  
+                      <div class="accordion-content" data-tab-content>
+                        <p class="text">・ブルーアーカイブ</p>
+                        <p class="text">・原神</p>
+                      </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">好きな音楽ジャンル</a>
+                    
+                        <div class="accordion-content" data-tab-content>
+                            <p class="text">・UK Hardcore</p>
+                            <p class="text">・Uptempo Hardcore</p>
+                            <p class="text">・Hardtek</p>
+                            <p class="text">・Frenchcore</p>
+                            <p class="text">・Rawstyle</p>
+                            <p class="text">・Xtra Raw</p>
+                        </div>
+                      </li>
+                  </ul>
+                -->
+            <!-- 
+            <p class="text">好きな音楽ジャンル</p>
+            <span class="text">・UK Hardcore</span>
+            <span class="text">・Uptempo Hardcore</span>
+            <span class="text">・Hardtek</span>
+            <span class="text">・Frenchcore</span>
+            <span class="text">・Rawstyle</span>
+            <span class="text">・Xtra Raw</span>
+             -->
+            <hr>
+            <h3 class="text"><strong>Contents</strong></h3>
+            <h4><span class="text">・</span><a href="project.html" class="link">Projects</a></h4>
+            <h4><span class="text">・</span><a href="" class="link" onclick="test()">My Music</a></h4>
+            <h4><span class="text">・</span><a href="achieve.html" class="link">Achievements</a></h4>
+            <h4><span class="text">・</span><a href="links.html" class="link">Links</a></h4>
+            <h4><span class="text">・</span><a href="https://project-navel.com/tsukiniyorisou/" class="link">Hentai Game</a></h4>
+            <hr>
+            <h3 class="text"><strong>Contact</strong></h3>
+            <h5><span class="text">・Twitter: </span><a href="https://twitter.com/a_5t0" class="link" target="_blank">@a_5t0</a></h5>
+            <h5><span class="text">・Discord: Asto#7739</span></h5>
+            <h5><span class="text">・E-mail: hogehoge(at)example.com</span></h5>
+            <hr>
+            <h3 class="text"><strong>Updates</strong></h3>
+            <p class="text">
+                <script type="text/javascript" class="text">
+                document.write('Recent Updates: ' + document.lastModified);
+                </script>
+            </p>
+            <p></p>
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">Change Log</a>
+              
+                  <div class="accordion-content" data-tab-content>
+                    <p class="text">2023/11/02(Thu) - Added "Hentai Game"</p>
+                    <p class="text">2023/11/02(Thu) - Updated "Top"</p>
+                    <p class="text">2023/11/02(Thu) - Updated "Links"</p>
+                    <p class="text">2023/11/02(Thu) - Updated "Projects"</p>
+                    
+                  </div>
+                </li>
+                
+              </ul>
+            <hr>
+            <p class="text" style="text-align: center;">
+                &copy; 2023 - Cellarium
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+    function test() {
+        alert('coming soon...');
+        console.log('a');
+    }
+    </script>
+</body>
+</html>
+    
+    
